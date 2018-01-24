@@ -41,12 +41,20 @@
          
        </header>
          <div id="results" class="hidden"></div>
-     <section id="example1">
-         HELLO WORLD
+	 <section id="mainSection">
+		<h2>About</h2>
+		<article>
+		 The Project is about a robot that detects and extinguishes fires. It is equipped with a water tank and wheels to move to location and spray the fire down.<br>
+		 It uses a camera with a heat sensor to detect heat signatures within its FOV. Once it detects a fire it will move to a predetermined distance to the fire and start spraying.
+		 Just like a vacuum, it will keep spraying and moving forward until all the fire is extinguished.
+		</article>
+         <h2>Videos</h2>
+			<iframe width="650" height="315" src="https://www.youtube.com/embed/udlgWmFFrZE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <br><br>
+			<iframe width="650" height="315" src="https://www.youtube.com/embed/S6ewLy5okJs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
      </section>
  
  <script src="pdfobject.min.js"></script>
- <script>
+ <!-- <script>
  
  var options = {
  	pdfOpenParams: {
@@ -58,13 +66,13 @@
  	}
  };
  
- var myPDF = PDFObject.embed("combinepdf.pdf", "#example1", options);
+ var myPDF = PDFObject.embed("combinepdf.pdf", "#projectPdf", options);
  
  var el = document.querySelector("#results");
  el.setAttribute("class", (myPDF) ? "success" : "fail");
  el.innerHTML = (myPDF) ? "" : "The PDF embed Didn't Work. Please try another browser or deleting your cache and trying again.";
  
- </script>
+ </script> -->
  
      </div>
      <!--[if !IE]><script>fixScale(document);</script><![endif]-->
